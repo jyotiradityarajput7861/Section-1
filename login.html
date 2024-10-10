@@ -4,42 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <title>CSS Intro</title>
 
-<body>
     <style>
-        .card{
-            border:1px solid red;
-            width: 20%;
-            border-radius:10px;
-            padding: 30px;
-            box-sizing: border-box;
-            box-shadow: 3px 3px 5px 0px #00000086;
-
+        p {
+            color: blue;
+            font-size: 40px;
+            background-color: yellow;
         }
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+
+        .myclass {
+            text-align: center;
+            color: green;
+        }
+
+        #myid {
+            color: red;
+            text-decoration: underline;
+            font-size: 40px;
+        }
+
+        h4 {
+            color: red;
+            font-size: 50px;
+        }
+
+        .myclass2 {
+            color: green !important;
+        }
+
+        #myid2 {
+            color: blue;
         }
     </style>
 
-    <div class="card">
-        <h2 class="form-title">loginform</h2>
+    <link rel="stylesheet" href="style.css">
 
-        <form>
-            <label>email address</label>
-            <input type="email" class="text-input">
+</head>
 
-            <label>Password</label>
-            <input type="password" class="text-input">
+<body>
 
-            <button class="btn">Submit</button>
+    <h1 style="color: red; font-size: 50px;">Inline CSS is used to style individual tags only</h1>
 
-        </form>
-    </div>
+    <p>Internal CSS is used to style entire page at once</p>
+    <p class="myclass">Name Selectors are used select element by their tag name</p>
+    <h2 class="myclass">Class Selectors are used to select element by their class name</h2>
+
+    <h3 id="myid">Id Selectors are used to select element by their id name</h3>
+
+    <h4 class="myclass2" id="myid2" style="color: brown;">
+        Priority of CSS : Name Selector < Class Selector < Id Selector < Inline CSS
+    </h4>
+
+
+    <button class="btn">External CSS</button>
+
 </body>
 
 </html>
