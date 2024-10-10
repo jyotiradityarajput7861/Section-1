@@ -1,0 +1,71 @@
+<DOCTYPE html></DOCTYPE>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Student Admission Form</h1>
+        <hr>
+    <form>
+        <label>Student Name</label>
+        <input type="text" required minilength="3">
+        <br>
+        <br>
+
+        <label for="">Student Email</label>
+        <input type="email">
+        <br>
+        <br>
+        <label>Date of Birth</label>
+        <input type="date">
+        <br><br>
+        <label>Gender</label>
+        <input type="radio">name="gender">Male
+        <input type="radio">name="gender">Female
+        <br><br>
+        
+        <label>Select course</label>
+        <select>
+            <option>Mern Stack</option>
+            <option>Django</option>
+            <option>AI ML</option>
+        </select>
+        <br><br>
+        <label>Select College</label>
+        <input type="text"list="College">
+
+        <datalist id="college">
+            <option>Lbs</option>
+            <option>Mgimt</option>
+            <option>Rrimt</option>
+        
+        </datalist>
+        <br><br>
+        <label><Address</label>
+        <textarea rows="5"cols="20"></textarea>
+
+        <br><br>
+        <label for="fileupload">Upload Image"<label></label>
+        <input hidden id="fileupload" type="file">
+        
+        <br><br>
+
+        <input type="checkbox">
+        <label> I accept terms and condition</label>
+
+        <br><br>
+
+        <details>
+            <summary>View terms and condition</summary>
+            </p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel aliquid ducimus tempore nesciunt mollitia provident itaque, possimus alias et facere. Neque doloribus, asperiores maiores inventore modi sed. Mollitia, itaque dolorum!
+            
+        </details>
+        <br><br>
+
+
+        <button type="submit">submit</button>
+    </form>
+    </body>
+    </html>

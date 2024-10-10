@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Intro</title>
+    <style>
+        p {
+            color: blue;
+            font-size: 40px;
+            background-color: yellow;
+        }
+
+        .myclass {
+            text-align: center;
+            color: blueviolet;
+        }
+
+        #myid {
+            color: brown;
+            text-decoration: underline;
+            font-size: 40px;
+
+        }
+        h4{
+            color:aqua;
+            font-size: 50px;
+        }
+        .myclass2 {
+            color: aquamarine;
+            font-size: 40px;
+        }
+        #myid2{
+            color: blue;
+            text-decoration: underline;
+            font-size: 40px;
+
+        }
+    </style>
+    <link rel="stylesheet"href="style.css">
+    </style>
+</head>
+
+<body>
+    <h1 style="color: red; font-size: 50px;">Inline CSS is used to style individual tags only</h1>
+    <p>Internal CSS is used to style entire page at once</p>
+    <p> class="myclass"Name Selectors are used select element by their tag name</p>
+
+    <h2> class="myclass"class selectors are used to select element by their class name</h2>
+    <h3 id="myid">Id Selectors are used to select element by their id name</h3>
+    <h4 class="myclass2" id="myid2" style="color:brown;">
+        Priority of CSS : Name Selectors< class Selectors < Id Selectors < Inline Css
+    </h4>
+    
+</body>
+
+</html>
